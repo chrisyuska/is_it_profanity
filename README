@@ -4,4 +4,6 @@ Is It Profanity?
 
   All code should be fairly straightforward given the app's simplicity.  I will not be creating an API for my site as I recommend you use Google's API if you're interested in acheiving the same thing.
 
+  I may add some additional functionality in the future, such as AJAX requests and maybe some way to display recent/top searches, but I'm keeping it simple for now.
+
   Written by: Chris Yuska
