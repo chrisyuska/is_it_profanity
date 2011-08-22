@@ -4,9 +4,10 @@ class HomeController < ApplicationController
 
   def index
     if params[:q].present?
-      q = params[:q].gsub(/\W+/, "+")
+      @q = params[:q]
+      qw = @q.gsub(/\W+/, "+")
     
-      @response = JSON.parse(Net::HTTP.get(URI.parse("http://www.wdyl.com/profanity?q=" + q)))["response"]
+      @response = JSON.parse(Net::HTTP.get(URI.parse("http://www.wdyl.com/profanity?q=" + qw)))["response"]
       
     end
   end
