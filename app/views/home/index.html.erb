@@ -3,10 +3,10 @@
 <% if @response.present? %>
   <p>
     <% if @response == "true" %>
-      <p>Hell yeah</p>
+      <p>Yep!</p>
       <p class="small_text">According to Google, "<%= @q %>" can be classified as profanity.</p>
     <% else %>
-      <p>Fuck no</p>
+      <p>Nope!</p>
       <p class="small_text">According to Google, "<%= @q %>" contains no profanity.</p>
     <% end %>
 <% end %>
